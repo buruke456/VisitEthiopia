@@ -1,0 +1,186 @@
+body {
+height: 1800px;
+background-color: black;
+}
+.contianer1{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+background-color: rgb(43, 42, 42);
+height: 79px;
+position: fixed;
+width: 100%;
+top: 0;
+right: 0;
+left: 0;
+z-index: 100;
+}
+.container2{
+display: flex;
+flex-direction: row;
+gap: 18px;
+align-items: center;
+margin-right: 40px;
+padding-left: 0;
+}
+.container3 {
+display: flex;
+flex-direction: row;
+align-items: center;
+gap: 8px;
+margin-left: 40px;
+
+}
+.image1{
+width: 80px;
+height: 50px;
+}
+.button1{
+background-color: rgb(43, 42, 42);
+border: none;
+font-size: 25px;
+font-weight: bold;
+color: white;
+}
+.button2{
+color: white;
+font-size: 15px;
+font-variant:small-caps;
+}
+.image2{
+width: 100%;
+margin-top: 50px;
+height: auto;
+}
+.container6{
+position: relative;
+z-index: 99;
+}
+.container4{
+position: absolute;
+top: 40%;
+left: 10%;
+
+}
+.button3{
+font-size: 80px;
+font-weight: bold;
+color: white;
+margin-bottom: 0;
+}
+.button4{
+font-size: 80px;
+font-weight: bold;
+color: darkorange;
+margin-top: 0;
+margin-bottom: 0;
+}
+.button5{
+font-size: 20px;
+text-transform: capitalize;
+color: white;
+margin-top: 0;
+}
+.button6{
+margin-left: 400px;
+background-color: orange;
+border: none;
+padding: 15px 22px;
+border-radius: 21px;
+font-weight: bold;
+}
+.button6:hover{
+color: white;
+transform: scale(1.2);
+}
+.button2:hover{
+color: orange;
+text-decoration: underline;
+}
+.image3{
+height: 30px;
+width: 30px;
+}
+@media(max-width:600px) {
+  .container2{
+  display: none !important;
+  }
+  .container7{
+  display: block !important;
+  }
+}
+.adventureContianer{
+display: grid;
+grid-template-columns: auto auto auto;
+gap:1rem;
+padding:3rem;
+
+}
+.adventureContianer .adventuretourcontianer{
+grid-column: 1/4;
+display:flex;
+justify-content: center;
+}
+.adventureContianer .adventuretourcontianer{
+  font-size:1.5rem;
+  text-decoration: none;
+  font-variant: small-caps;
+  font-weight: 700;
+}
+.adventureContianer .adventureBoxContianer{
+background-color: rgba(255, 255, 255, 0.1);
+border-radius: 1rem;
+overflow: hidden;
+}
+.adventureContianer .adventureBoxContianer .adventureimageContianer img{
+width:20rem;
+height: 19rem;
+border-radius: 50%;
+margin-top: 20px;
+margin-left: 30px;
+}
+.adventureContianer .adventureBoxContianer .Adventurereadmorecontianer
+{
+  font-size: 1rem;
+  border:1rem solid #e2a84b;
+  display:block;
+  text-decoration: capitalize;
+  width: fit-content;
+  justify-self: center;;
+
+}
+.adventureContianer .adventureBoxContianer .Adventurereadmorecontianer a {
+
+    
+}
+.adventureParagraphyContianer{
+margin-left: 30px;
+}
+.adventureTitleContianer{
+margin-left: 30px;
+}
+.adventuresContainer .adventureBoxContianer.readmore {
+    
+}
+
+.adventuresContainer .box .readmore {
+    justify-items: center;
+}
+.adventuretourcontianer a{
+color: white;
+font-size: 25px;
+font-weight: bold;
+}
+.adventureBoxContianer:hover{
+border-color: #e2a84b;
+border-style: solid;
+border-width: 2px;
+}
+.button-bete{
+background-color: rgb(229, 226, 226);
+border-color: black;
+color: orange;
+padding: 10px 25px;
+border-radius: 15px;
+}

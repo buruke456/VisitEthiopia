@@ -1,0 +1,224 @@
+body {
+    height: 1800px;
+    background-color: black;
+}
+
+.headerContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(43, 42, 42);
+    height: 79px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.logoContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    margin-left: 40px;
+}
+
+.textLogoContainer {
+    background-color: rgb(43, 42, 42);
+    border: none;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+}
+
+.imageLogoContainer img {
+    width: 80px;
+    height: 50px;
+}
+
+.menuContainer ul {
+    display: flex;
+    flex-direction: row;
+    gap: 18px;
+    align-items: center;
+    margin-right: 40px;
+}
+
+.menuContainer li {
+    list-style: none;
+}
+
+.menuContainer a {
+    color: white;
+    font-size: 15px;
+    font-variant: small-caps;
+    text-decoration: none;
+}
+
+.menuContainer a:hover {
+    color: orange;
+    text-decoration: underline;
+}
+
+.landing {
+    position: relative;
+    z-index: 99;
+}
+
+.landingContainer {
+    position: relative;
+}
+
+.landingContainer > img {
+    width: 100%;
+    margin-top: 50px;
+}
+
+.neverTextContainer {
+    position: absolute;
+    top: 40%;
+    left: 10%;
+}
+
+.neverTextContainer h1 {
+    font-size: 80px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 0;
+}
+
+.exploringTextContainer {
+    position: absolute;
+    top: 48%;
+    left: 10%;
+    font-size: 80px;
+    font-weight: bold;
+    color: darkorange;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.paragraphContainer {
+    position: absolute;
+    top: 65%;
+    left: 10%;
+}
+
+.paragraphContainer p {
+    font-size: 20px;
+    text-transform: capitalize;
+    color: white;
+    margin-top: 0;
+}
+
+.getsStartedContainer {
+    position: absolute;
+    top: 75%;
+    left: 10%;
+}
+
+.getsStartedContainer button {
+    margin-left: 400px;
+    background-color: orange;
+    border: none;
+    padding: 15px 22px;
+    border-radius: 21px;
+    font-weight: bold;
+}
+
+.getsStartedContainer button:hover {
+    color: white;
+    transform: scale(1.2);
+}
+
+.container7 {
+    display: none;
+}
+
+.image3 {
+    height: 30px;
+    width: 30px;
+}
+
+@media (max-width: 600px) {
+    .menuContainer {
+        display: none !important;
+    }
+
+    .container7 {
+        display: block !important;
+    }
+}
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visit Ethiopia</title>
+
+  <link rel="stylesheet" href="../asset/css/style.css">
+</head>
+
+<body>
+  <div class="headerContainer">
+      <div class="logoContainer">
+
+          <div class="textLogoContainer">
+              <h4>Visit Ethiopia</h4>
+          </div>
+
+          <div class="imageLogoContainer">
+              <img class="image1" src="../asset/images/flag.jpg" alt="Ethiopian flag">
+          </div>
+
+      </div>
+      <div class="menuContainer">
+
+          <ul>
+              <li><a class="button2" href="">HOME</a></li>
+              <li><a class="button2" href="">LATEST NEWS</a></li>
+              <li><a class="button2" href="">ADVENTURES</a></li>
+              <li><a class="button2" href="">PACKAGES</a></li>
+              <li><a class="button2" href="">CONTACT</a></li>
+              <li><a class="button2" href="">TOUR</a></li>
+          </ul>
+
+      </div>
+
+  </div>
+  <div class="landing">
+
+      <div class="landingContainer">
+
+          <img class="image2" src="../asset/images/image1.jpg" alt="Explore Ethiopia">
+
+          <div class="neverTextContainer">
+              <p class="button3">Never Stop</p>
+          </div>
+
+          <div class="exploringTextContainer">
+              <p class="button4">Exploring</p>
+          </div>
+
+          <div class="paragraphContainer">
+              <p class="button5">
+                  visit ethiopia offers best deals on ethiopia tour packages.
+              </p>
+          </div>
+
+          <div class="getsStartedContainer">
+              <button class="button6">Get Started</button>
+          </div>
+
+      </div>
+
+  </div>
+
+</body>
+</html>

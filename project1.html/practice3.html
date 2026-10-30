@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+  </head>
+  <body>
+   <label>Gender</label> 
+   <input type="radio" id="male" name="sex" value="male">
+   <label for="male">Male</label>
+   <input type="radio" id="female" name="sex" value="female" checked>
+   <label>Female</label>
+   <br>
+   <label for="birthdate">Date
+   </label>
+   <input type="date" id="birthdate">
+   <br>
+   <label for="name">Fullname</label>
+   <input type="text" id="name">
+   <br>
+   <label for="secret">Password</label>
+   <input type="password" id="secret">
+<br>
+<p>CHoose your interest</p>
+<input type="checkbox" id="soft" name="interest" value="software">
+<label for="soft">Software Engineering</label>
+<br>
+<input type="checkbox" id="net" name="interest" value="networking">
+<label for="net">Networking dept</label>
+<br>
+<input type="checkbox" id="ele" name="interest" value="electronics">
+<label for="ele">electronics technology</label>
+<br>
+<label for="education">Educational level:</label>
+
+<select id="education" name="education">
+    <option value="" selected disabled>Choose one</option>
+    <option value="highschool">High School</option>
+    <option value="diploma">College Diploma</option>
+    <option value="degree">First Degree</option>
+    <option value="masters">Master's Degree</option>
+    <option value="phd">PhD</option>
+</select>
+<br>
+<label for="food">Choose food:</label>
+
+<select id="food" name="food">
+    <optgroup label="Italian Food">
+        <option value="pizza">Pizza</option>
+        <option value="spaghetti">Spaghetti</option>
+    </optgroup>
+
+    <optgroup label="Fast Food">
+        <option value="burger">Burger</option>
+        <option value="sandwich">Sandwich</option>
+    </optgroup>
+</select>
+<br>
+<form action="/register" method="post">
+    <input type="hidden" name="form_type" value="student">
+
+    <label for="fname">First name:</label>
+    <input type="text" id="fname" name="fname">
+
+    <button type="submit">Submit</button>
+    <br>
+    <label for="photo">Upload a photo</label>
+    <input type="file" id="photo" name="photo" >
+</form>
+  </body>
+</html>
